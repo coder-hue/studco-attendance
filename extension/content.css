@@ -1,0 +1,40 @@
+#stuco-grade-modal,#stuco-grade-modal *{box-sizing:border-box}
+#stuco-grade-modal{position:fixed;inset:0;z-index:2147483647;display:grid;place-items:center;padding:24px;background:rgba(10,20,40,.68);backdrop-filter:blur(5px);font:15px/1.45 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#172033}
+#stuco-grade-modal .stuco-panel{position:relative;width:min(600px,100%);max-height:min(820px,92vh);overflow:auto;padding:36px;background:#fff;border:1px solid #e2e8f0;border-radius:22px;box-shadow:0 28px 80px rgba(3,12,32,.34)}
+#stuco-grade-modal .stuco-close{position:absolute;top:18px;right:18px;width:38px;height:38px;min-width:38px;min-height:38px;margin:0;padding:0;border:0;border-radius:50%;background:#f1f5f9;color:#475569;font:500 25px/1 system-ui;cursor:pointer}
+#stuco-grade-modal .stuco-close:hover{background:#e2e8f0;color:#172033}
+#stuco-grade-modal .stuco-modal-header{padding-right:42px}
+#stuco-grade-modal .stuco-kicker{display:block;margin:0 0 8px;color:#1d4ed8;font-size:12px;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
+#stuco-grade-modal h2{margin:0;color:#172033;font-size:30px;line-height:1.15;letter-spacing:-.035em}
+#stuco-grade-modal h3{margin:0;color:#172033;font-size:17px;line-height:1.25;letter-spacing:-.015em}
+#stuco-grade-modal p{margin:7px 0 0;color:#64748b}
+#stuco-grade-modal .stuco-assignment-name{display:inline-flex;max-width:100%;margin-top:16px;padding:7px 11px;overflow:hidden;border-radius:8px;background:#eff4ff;color:#1e40af;font-weight:750;text-overflow:ellipsis;white-space:nowrap}
+#stuco-grade-modal .stuco-choice{margin-top:24px;padding:20px;border:1px solid #dbe3f0;border-radius:15px;background:#fbfdff}
+#stuco-grade-modal .stuco-choice-heading{display:flex;align-items:flex-start;gap:12px}
+#stuco-grade-modal .stuco-choice-heading p{margin-top:3px;font-size:13px}
+#stuco-grade-modal .stuco-step{display:grid;flex:0 0 28px;width:28px;height:28px;place-items:center;border-radius:50%;background:#1d4ed8;color:#fff;font-size:13px;font-weight:800}
+#stuco-grade-modal .stuco-field{display:grid;gap:7px;margin:18px 0 12px;color:#334155;font-weight:750}
+#stuco-grade-modal .stuco-field>span{font-size:13px}
+#stuco-grade-modal .stuco-field select,#stuco-grade-modal .stuco-field input{display:block;width:100%;height:46px;margin:0;padding:0 13px;border:1px solid #cbd5e1;border-radius:9px;background:#fff;color:#172033;font:500 15px/1 system-ui;outline:none}
+#stuco-grade-modal .stuco-field select:focus,#stuco-grade-modal .stuco-field input:focus{border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.14)}
+#stuco-grade-modal button.stuco-primary{display:flex;align-items:center;justify-content:center;width:100%;min-height:46px;margin:0;padding:11px 16px;border:0;border-radius:9px;background:#1d4ed8;color:#fff;font:750 15px/1.2 system-ui;cursor:pointer}
+#stuco-grade-modal button.stuco-primary:hover{background:#1e40af}
+#stuco-grade-modal button:disabled{cursor:not-allowed;opacity:.48}
+#stuco-grade-modal .stuco-or{display:flex;align-items:center;gap:12px;margin:18px 0 -6px;color:#94a3b8;font-size:12px;font-weight:800;text-transform:uppercase}
+#stuco-grade-modal .stuco-or:before,#stuco-grade-modal .stuco-or:after{content:"";height:1px;flex:1;background:#e2e8f0}
+#stuco-grade-modal .stuco-status{display:flex;margin:18px 2px 0;padding:11px 13px;border-radius:9px;background:#f8fafc;color:#64748b;font-size:13px}
+#stuco-grade-modal .stuco-status.is-error{background:#fff1f2;color:#be123c}
+#stuco-grade-modal table{width:100%;border-collapse:collapse;margin:18px 0}
+#stuco-grade-modal th,#stuco-grade-modal td{padding:10px 7px;border-bottom:1px solid #e4e7ec;text-align:left}
+#stuco-grade-modal button:not(.stuco-close):not(.stuco-primary){min-height:42px;margin:0 7px 0 0;padding:10px 14px;border:0;border-radius:8px;background:#1d4ed8;color:#fff;font-weight:750;cursor:pointer}
+#stuco-grade-modal button.secondary{background:#eef2ff!important;color:#1d4ed8!important}
+.stuco-ok{color:#067647}.stuco-missing{color:#b42318}
+.stuco-assignment-helper{display:inline-flex;max-width:100%;align-items:center;gap:8px;margin-right:8px;vertical-align:middle}
+.stuco-assignment-helper .stuco-create-attendance{margin-right:0}
+.stuco-assignment-helper .stuco-create-attendance:disabled{cursor:wait;opacity:.58}
+.stuco-assignment-helper-status{max-width:440px;color:#526174;font-size:12px;font-weight:500}
+.stuco-assignment-helper-status.is-error{color:#b42318}
+.stuco-assignment-notice{position:fixed;right:22px;bottom:22px;z-index:2147483647;max-width:min(430px,calc(100vw - 32px));padding:14px 17px;border:1px solid #b7dfc9;border-radius:10px;background:#ecfdf3;color:#05603a;font:700 14px/1.4 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;box-shadow:0 18px 45px rgba(15,23,42,.2)}
+.stuco-assignment-notice.is-warning{border-color:#f3d38c;background:#fffaeb;color:#8a4b08}
+.stuco-assignment-notice.is-error{border-color:#f5b8c0;background:#fff1f2;color:#a5102c}
+@media(max-width:640px){#stuco-grade-modal{padding:12px}#stuco-grade-modal .stuco-panel{max-height:94vh;padding:26px 18px;border-radius:17px}#stuco-grade-modal .stuco-close{top:12px;right:12px}#stuco-grade-modal h2{font-size:25px}#stuco-grade-modal .stuco-choice{padding:16px}}

@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "StuCo Attendance Grade Import",
+  "version": "1.12.0",
+  "description": "Creates and imports StuCo attendance directly from Schoology.",
+  "host_permissions": ["https://attendance.coderhue.dev/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [{
+    "matches": ["https://*.schoology.com/*", "https://schoology.com/*", "https://learn.sowashco.org/*"],
+    "js": ["content.js"],
+    "css": ["content.css"],
+    "run_at": "document_idle",
+    "all_frames": true
+  }]
+}

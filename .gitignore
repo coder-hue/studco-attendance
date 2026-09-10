@@ -1,0 +1,12 @@
+.env
+.env.discord
+.DS_Store
+.codex-docs/
+bridge/
+extension/node_modules/
+ios/**/xcuserdata/
+ios/**/DerivedData/
+*.xcuserstate
+schoology-import-test.csv
+/storage/*.log
+/storage/*.sqlite

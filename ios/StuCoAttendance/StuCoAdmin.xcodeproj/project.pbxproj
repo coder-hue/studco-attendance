@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		134166AA20A2D36AD627573F /* AttendanceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B8F5CE3A5047BBC492BA86 /* AttendanceAPI.swift */; };
+		2DDC078C0ACAC1A7547B32FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA07254C6B273F2C401B5E92 /* ContentView.swift */; };
+		468DF55DCE0E837549B9CDC4 /* StuCoAdminWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DF12E518CC7832399E2639DE /* StuCoAdminWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		53EE5879520958CE5E4A59C4 /* AttendanceActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB38FBCA533AE521C6DD620A /* AttendanceActivityAttributes.swift */; };
+		68CC33FED592B66265FD8074 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7749A4C9BCCF48DB7021C2E9 /* Assets.xcassets */; };
+		7D13EEA2B897D090581038AF /* AttendanceActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB38FBCA533AE521C6DD620A /* AttendanceActivityAttributes.swift */; };
+		99F52BC29D35A3096FC4B129 /* StuCoAttendanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44291F14A265BD0A9FA94F2 /* StuCoAttendanceApp.swift */; };
+		A26C78DA28C36CCB9F64FE48 /* AttendanceLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C18FC4781D4010117B51E6 /* AttendanceLiveActivity.swift */; };
+		A9F5D4F6B9574F7456EE5AAE /* AttendanceWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD283CCBC67E947A7720C06C /* AttendanceWidgetBundle.swift */; };
+		DC2684AB0130E745452F28A8 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2A20CFD8AB799116DA74D0 /* Models.swift */; };
+		FC977812F091BAB966980581 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718CA330579E67CE301F9DAE /* AppModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF57D6E72C6C17FED433C063 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FAF63C283E934A847D6957 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D81AE403FD91F9080FB9F62C;
+			remoteInfo = StuCoAdminWidgets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9F6982EDE5D389F43D961688 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				468DF55DCE0E837549B9CDC4 /* StuCoAdminWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		208F65EB3986D532385E9CE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		52B8F5CE3A5047BBC492BA86 /* AttendanceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceAPI.swift; sourceTree = "<group>"; };
+		6B2A20CFD8AB799116DA74D0 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		718CA330579E67CE301F9DAE /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		7749A4C9BCCF48DB7021C2E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85BFE1347A11EFC903358102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BA07254C6B273F2C401B5E92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C2C18FC4781D4010117B51E6 /* AttendanceLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceLiveActivity.swift; sourceTree = "<group>"; };
+		CD283CCBC67E947A7720C06C /* AttendanceWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceWidgetBundle.swift; sourceTree = "<group>"; };
+		D44291F14A265BD0A9FA94F2 /* StuCoAttendanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StuCoAttendanceApp.swift; sourceTree = "<group>"; };
+		DF12E518CC7832399E2639DE /* StuCoAdminWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = StuCoAdminWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB38FBCA533AE521C6DD620A /* AttendanceActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceActivityAttributes.swift; sourceTree = "<group>"; };
+		F8BBDD7AA2F91F6F704554E6 /* StuCoAdmin.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = StuCoAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		29622D99041BFC729C2CF1A3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EB38FBCA533AE521C6DD620A /* AttendanceActivityAttributes.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		45CDD1CD4CD305A8F82BFD2C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7749A4C9BCCF48DB7021C2E9 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5A706D8066EEA16DF607E382 = {
+			isa = PBXGroup;
+			children = (
+				D08E97F887E9CE9D21B4CBDA /* App */,
+				45CDD1CD4CD305A8F82BFD2C /* Resources */,
+				29622D99041BFC729C2CF1A3 /* Shared */,
+				B98BB611A86FDEDCD4066EE6 /* Widgets */,
+				C32EF652E90EF91FEE044456 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B98BB611A86FDEDCD4066EE6 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				C2C18FC4781D4010117B51E6 /* AttendanceLiveActivity.swift */,
+				CD283CCBC67E947A7720C06C /* AttendanceWidgetBundle.swift */,
+				208F65EB3986D532385E9CE4 /* Info.plist */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		C32EF652E90EF91FEE044456 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8BBDD7AA2F91F6F704554E6 /* StuCoAdmin.app */,
+				DF12E518CC7832399E2639DE /* StuCoAdminWidgets.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D08E97F887E9CE9D21B4CBDA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				718CA330579E67CE301F9DAE /* AppModel.swift */,
+				52B8F5CE3A5047BBC492BA86 /* AttendanceAPI.swift */,
+				BA07254C6B273F2C401B5E92 /* ContentView.swift */,
+				85BFE1347A11EFC903358102 /* Info.plist */,
+				6B2A20CFD8AB799116DA74D0 /* Models.swift */,
+				D44291F14A265BD0A9FA94F2 /* StuCoAttendanceApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D39E8B9007B24ADD9C38D4A9 /* StuCoAdmin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9939C68E236F3CC523E44AB1 /* Build configuration list for PBXNativeTarget "StuCoAdmin" */;
+			buildPhases = (
+				0CD7E3C1A00D217B9F88CB2F /* Sources */,
+				EBD599640B55BB905A18435B /* Resources */,
+				9F6982EDE5D389F43D961688 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63E6A3E3A9F8BCD0D99E466F /* PBXTargetDependency */,
+			);
+			name = StuCoAdmin;
+			packageProductDependencies = (
+			);
+			productName = StuCoAdmin;
+			productReference = F8BBDD7AA2F91F6F704554E6 /* StuCoAdmin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D81AE403FD91F9080FB9F62C /* StuCoAdminWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76A2F002EF3840A08CAD62C3 /* Build configuration list for PBXNativeTarget "StuCoAdminWidgets" */;
+			buildPhases = (
+				274976115D9486AACB42ED05 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StuCoAdminWidgets;
+			packageProductDependencies = (
+			);
+			productName = StuCoAdminWidgets;
+			productReference = DF12E518CC7832399E2639DE /* StuCoAdminWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FAF63C283E934A847D6957 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					D39E8B9007B24ADD9C38D4A9 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 595D39BDB9E6CCF57A291BF8 /* Build configuration list for PBXProject "StuCoAdmin" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 5A706D8066EEA16DF607E382;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C32EF652E90EF91FEE044456 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D39E8B9007B24ADD9C38D4A9 /* StuCoAdmin */,
+				D81AE403FD91F9080FB9F62C /* StuCoAdminWidgets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBD599640B55BB905A18435B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CC33FED592B66265FD8074 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CD7E3C1A00D217B9F88CB2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC977812F091BAB966980581 /* AppModel.swift in Sources */,
+				134166AA20A2D36AD627573F /* AttendanceAPI.swift in Sources */,
+				7D13EEA2B897D090581038AF /* AttendanceActivityAttributes.swift in Sources */,
+				2DDC078C0ACAC1A7547B32FC /* ContentView.swift in Sources */,
+				DC2684AB0130E745452F28A8 /* Models.swift in Sources */,
+				99F52BC29D35A3096FC4B129 /* StuCoAttendanceApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274976115D9486AACB42ED05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53EE5879520958CE5E4A59C4 /* AttendanceActivityAttributes.swift in Sources */,
+				A26C78DA28C36CCB9F64FE48 /* AttendanceLiveActivity.swift in Sources */,
+				A9F5D4F6B9574F7456EE5AAE /* AttendanceWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63E6A3E3A9F8BCD0D99E466F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D81AE403FD91F9080FB9F62C /* StuCoAdminWidgets */;
+			targetProxy = EF57D6E72C6C17FED433C063 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0CB8806E56BC45E3F3AC1625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		16B4BB2AEA0EC90C311EEA51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.coderhue.stucoadmin;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2099E3CE277C60196999CAD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.coderhue.stucoadmin.widgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6E48B2A7718ECF6D49AED0A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.coderhue.stucoadmin.widgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		950B253DC8E94D8855ADA3F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.coderhue.stucoadmin;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA70808FE38CEF5978E36CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		595D39BDB9E6CCF57A291BF8 /* Build configuration list for PBXProject "StuCoAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA70808FE38CEF5978E36CAB /* Debug */,
+				0CB8806E56BC45E3F3AC1625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		76A2F002EF3840A08CAD62C3 /* Build configuration list for PBXNativeTarget "StuCoAdminWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E48B2A7718ECF6D49AED0A4 /* Debug */,
+				2099E3CE277C60196999CAD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9939C68E236F3CC523E44AB1 /* Build configuration list for PBXNativeTarget "StuCoAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				950B253DC8E94D8855ADA3F5 /* Debug */,
+				16B4BB2AEA0EC90C311EEA51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FAF63C283E934A847D6957 /* Project object */;
+}
