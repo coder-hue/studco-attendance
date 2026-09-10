@@ -3,6 +3,7 @@ name: Deploy attendance site
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -36,9 +37,9 @@ jobs:
           DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
         run: |
           remote="${DEPLOY_USER}@${DEPLOY_HOST}"
-          ssh -p "$DEPLOY_PORT" "$remote" "mkdir -p '$DEPLOY_PATH/app' '$DEPLOY_PATH/database' '$DEPLOY_PATH/scripts'"
+          ssh -p "$DEPLOY_PORT" "$remote" "mkdir -p '$DEPLOY_PATH' '$DEPLOY_PATH/../app' '$DEPLOY_PATH/../database' '$DEPLOY_PATH/../scripts'"
           rsync -az -e "ssh -p $DEPLOY_PORT" --exclude='.env' --exclude='.env.discord' public/ "$remote:$DEPLOY_PATH/"
-          rsync -az -e "ssh -p $DEPLOY_PORT" app/ "$remote:$DEPLOY_PATH/app/"
-          rsync -az -e "ssh -p $DEPLOY_PORT" database/ "$remote:$DEPLOY_PATH/database/"
-          rsync -az -e "ssh -p $DEPLOY_PORT" scripts/ "$remote:$DEPLOY_PATH/scripts/"
-          ssh -p "$DEPLOY_PORT" "$remote" "cd '$DEPLOY_PATH' && php scripts/install.php --migrate-only"
+          rsync -az -e "ssh -p $DEPLOY_PORT" app/ "$remote:$DEPLOY_PATH/../app/"
+          rsync -az -e "ssh -p $DEPLOY_PORT" database/ "$remote:$DEPLOY_PATH/../database/"
+          rsync -az -e "ssh -p $DEPLOY_PORT" scripts/ "$remote:$DEPLOY_PATH/../scripts/"
+          ssh -p "$DEPLOY_PORT" "$remote" "cd '$DEPLOY_PATH/..' && php scripts/install.php --migrate-only"
