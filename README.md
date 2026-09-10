@@ -9,7 +9,7 @@ A fast, mobile-first attendance app for student council meetings.
 - Configurable open and close check-in windows with manual overrides
 - Regular attendance worth 2 points; non-submissions stay blank
 - Decorations Day mode with separate 6-point “Left early” and 8-point “Full time” QR codes
-- Dance shifts mode with one QR and a per-member check-in window from 10 minutes before through 10 minutes after the assigned shift
+- Dance shifts mode with one QR and a per-member check-in window from 10 minutes before the assigned shift until 10 minutes after the 20-minute shift ends
 - Live officer dashboard with manual attendance corrections
 - Event finalization, which marks non-check-ins absent
 - Roster management and CSV member import
@@ -52,4 +52,4 @@ Ella Adamson, 6:30 PM
 Lincoln Aguilar, 7:00 PM
 ```
 
-or set individual shift times in the roster. Importing a pasted list replaces the current shift list. The event can still be closed manually, but while it is open each member can only record attendance from 10 minutes before through 10 minutes after their own shift.
+or set individual shift times in the roster. Importing a pasted list replaces the current shift list. The event can still be closed manually, but while it is open each member can only record attendance from 10 minutes before their shift starts until 10 minutes after the 20-minute shift ends.

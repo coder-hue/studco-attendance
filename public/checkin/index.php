@@ -76,7 +76,9 @@ if (($event['attendance_mode'] ?? 'standard') === 'dance_shifts') {
     } else {
         $danceShift=new DateTimeImmutable($event['event_date'].' '.$shiftTime);
         $windowStart=$danceShift->modify('-10 minutes');
-        $windowEnd=$danceShift->modify('+10 minutes');
+        // A dance shift lasts 20 minutes. Allow check-in from 10 minutes
+        // before its start until 10 minutes after it ends.
+        $windowEnd=$danceShift->modify('+30 minutes');
         $now=new DateTimeImmutable();
         if ($now < $windowStart) {
             $isAvailable=false;
@@ -191,7 +193,7 @@ page_start($event['title'], 'checkin-confirmation'); ?>
 <?php elseif ($danceWindowState==='early' && $danceShift): ?>
     <section class="card hero-card center"><div class="success-icon">○</div><h1>Your shift has not opened yet</h1><p class="muted"><?= e($confirmationFirstName) ?>, your shift is at <?= e($danceShift->format('g:i A')) ?>. You can check in starting at <?= e($danceShift->modify('-10 minutes')->format('g:i A')) ?>.</p></section>
 <?php elseif ($danceWindowState==='late' && $danceShift): ?>
-    <section class="card hero-card center"><div class="success-icon">×</div><h1>Your check-in window has closed</h1><p class="muted">Your <?= e($danceShift->format('g:i A')) ?> shift could be checked in through <?= e($danceShift->modify('+10 minutes')->format('g:i A')) ?>. Please talk to <?= e(app_setting('secretary_name','the secretary')) ?>.</p></section>
+    <section class="card hero-card center"><div class="success-icon">×</div><h1>Your check-in window has closed</h1><p class="muted">Your <?= e($danceShift->format('g:i A')) ?> shift could be checked in through <?= e($danceShift->modify('+30 minutes')->format('g:i A')) ?>. Please talk to <?= e(app_setting('secretary_name','the secretary')) ?>.</p></section>
 <?php elseif (!$isAvailable): ?>
     <section class="card hero-card center"><div class="success-icon">×</div><h1>Attendance is closed</h1><p class="muted">If you need your attendance recorded, please come talk to <?= e(app_setting('secretary_name', 'the secretary')) ?>.</p></section>
 <?php else: ?>
