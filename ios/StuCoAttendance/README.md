@@ -15,7 +15,7 @@ One private app for creating and running Student Council attendance events.
 
 ## Run
 
-1. Upload `public/mobile-admin-api.php` from the attendance project to `attendance.coderhue.dev`.
+1. Upload `public/mobile-admin-api.php` from the attendance project to `attendance.whsstudco.com`.
 2. Open `StuCoAdmin.xcodeproj`.
 3. Select your Apple Development Team for `StuCoAdmin` and `StuCoAdminWidgets`.
 4. Run on your iPhone and unlock with Face ID.

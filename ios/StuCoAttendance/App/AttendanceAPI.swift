@@ -2,7 +2,7 @@ import Foundation
 
 struct AdminAPI {
     static let shared = AdminAPI()
-    private let endpoint = URL(string: "https://attendance.coderhue.dev/mobile-admin-api.php")!
+    private let endpoint = URL(string: "https://attendance.whsstudco.com/mobile-admin-api.php")!
     private var decoder: JSONDecoder { let value=JSONDecoder(); value.dateDecodingStrategy = .iso8601; return value }
 
     func session() async throws -> AdminUser { try await get("session", as: SessionResponse.self).user }

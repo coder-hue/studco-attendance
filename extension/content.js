@@ -1,6 +1,6 @@
 (() => {
   const launcherClass = 'stuco-grade-import';
-  const attendanceOrigin = 'https://attendance.coderhue.dev';
+  const attendanceOrigin = 'https://attendance.whsstudco.com';
   const debugKey = 'stucoAttendanceDebug';
   const pendingKey = 'stucoPendingAssignmentAttendance';
   function debug(level, message, details) {

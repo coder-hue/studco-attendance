@@ -1,4 +1,4 @@
-const attendanceOrigin = 'https://attendance.coderhue.dev';
+const attendanceOrigin = 'https://attendance.whsstudco.com';
 
 chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
   if (message?.type === 'stuco-attendance-create-event') {
